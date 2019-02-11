@@ -15,6 +15,7 @@ exports.calculate = function(req, res) {
     'subtract': function(a,b) { return a - b },
 	'multiply': function(a,b) { return a * b }, 
     'divide': function(a,b) { return a / b },
+	//another change
   };
 
   // Determine the operation
@@ -48,3 +49,4 @@ exports.calculate = function(req, res) {
 
   res.json({ result: operation(req.query.operand1, req.query.operand2) });
 };
+
